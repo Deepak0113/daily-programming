@@ -1,0 +1,26 @@
+a=int(input())
+x1=[[int(i) for i in input().split(" ")]for j in range(a)]
+x2=[[int(i) for i in input().split(" ")]for j in range(a)]
+low=0
+high=a-1
+count=(a+2)//2
+for i in range(count):
+    for j in range(low,high+1):
+        print(x1[low][j],end=" ")
+    for j in range(low,high+1):
+        print(x2[low][j],end=" ")
+    for j in range(low+1,high+1):
+        print(x1[j][high],end=" ")
+    for j in range(low+1,high+1):
+        print(x2[j][high],end=" ")
+    for j in range(high-1,low-1,-1):
+        print(x1[high][j],end=" ")
+    for j in range(high-1,low-1,-1):
+        print(x2[high][j],end=" ")
+    for j in range(high-1,low,-1):
+        print(x1[j][low],end=" ")
+    for j in range(high-1,low,-1):
+        print(x2[j][low],end=" ")
+    low+=1
+    high-=1
+    
