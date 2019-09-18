@@ -1,0 +1,14 @@
+a=int(input())
+l=[[int(i) for i in input().split(" ")]for j in range(a)]
+if(a%2==0):
+    for i in range(a):
+        print(l[i][0],end=" ")
+    print()
+    for i in range(a):
+        print(l[i][a-1],end=" ")
+else:
+    for i in range(a):
+        print(l[0][i],end=" ")
+    print()
+    for i in range(a):
+        print(l[a-1][i],end=" ")
