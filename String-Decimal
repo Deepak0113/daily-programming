@@ -1,0 +1,9 @@
+a=list(map(str,input().strip()))
+a=a[::-1]
+count=0
+j=1
+for i in a:
+    if("a"==i):
+        count+=j
+    j*=2
+print(count)
