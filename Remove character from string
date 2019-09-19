@@ -1,0 +1,5 @@
+a=input().strip()
+b=input()
+for i in a:
+    if(i!=b):
+        print(i,end="")
