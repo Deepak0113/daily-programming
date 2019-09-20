@@ -1,0 +1,19 @@
+a=input()
+l=[]
+x=[]
+l1=[]
+for i in a:
+    if(i not in l):
+        l.append(i)
+        x.append(a.count(i))
+x1=max(x)
+s=""
+for i i range(len(l)):
+    if(x[i]==x1 and x1!=1):
+        l1.append(l[i])
+for i in a:
+    if(i not in l1):
+        print(i,end="")
+        s+=i
+if(len(s1)==0):
+    print(-1)
