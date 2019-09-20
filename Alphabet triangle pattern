@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+void main()
+{
+    char a;
+    scanf("%c",&a);
+    int j=1;
+    a=toupper(a);
+    for(char i='A';i<=a;i++){
+        for(int x=0;x<j;x++){
+            printf("%c ",i);
+        }
+        j++;
+        printf("\n");
+    }
+}
