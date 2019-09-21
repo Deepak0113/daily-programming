@@ -1,0 +1,11 @@
+a=int(input())
+l=[input().strip() for i in range(a)]
+s="aeiouAEIOU"
+x1=[]
+for i in l:
+    count=0
+    for j in i:
+        if(j not in s):
+            count+=1
+    x1.append(count)
+print(l[x1.index(max(x1))])
