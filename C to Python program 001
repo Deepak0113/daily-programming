@@ -1,0 +1,19 @@
+Convert the below c program to python program
+
+#include <stdio.h> 
+#include <stdlib.h> 
+int main() 
+{ 
+    char str[101]; 
+    int len, X; 
+    scanf("%s%n\n%d", str, &len, &X); 
+    printf(str+len-X); 
+    return 0; 
+}
+
+python program:-
+
+a=input()
+b=len(a)
+c=int(input())
+print(a[b-c-1:b])
