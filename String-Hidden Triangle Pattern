@@ -1,0 +1,21 @@
+a=input()
+low=len(a)//2
+high=len(a)//2
+for i in range((len(a)//2)+1):
+    s=""
+    s+=a[high+1:len(a)]
+    s+=a[low:high+1]
+    s+=a[0:low]
+    low-=1
+    high+=1
+    print(s)
+print(s)
+
+Example output:
+I/P: 
+chicken
+O/P:
+kencchi
+enickch
+nhickec
+chicken
