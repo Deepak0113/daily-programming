@@ -1,0 +1,19 @@
+convert python program:
+a=[int(i)%2 for i in input().split()]
+print(sum(a))
+
+
+C program:
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b=0;
+    while(scanf("%d",&a)==1){
+        if(a%2!=0){
+            b++;
+        }
+    }
+    printf("%d",b);
+}
