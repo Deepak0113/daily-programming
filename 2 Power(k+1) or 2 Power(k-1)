@@ -1,0 +1,15 @@
+a=int(input())
+z1=0
+z2=0
+c=0
+i=0
+while(z1<=a or z2<=a):
+    z1=(2**i)+1
+    z2=(2**i)-1
+    if(z1==a or z2==a):
+        c=1
+        print(i)
+        break
+    i+=1
+if(c==0):
+    print("No")
