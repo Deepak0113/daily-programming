@@ -1,0 +1,5 @@
+l=list(map(int,input().split(" ")))
+x=min(l)
+y=max(l)
+for i in range(x,y+1):
+    print(i,end=" ")
