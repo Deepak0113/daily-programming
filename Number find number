@@ -1,0 +1,17 @@
+a=int(input())
+length=0
+for i in range(1,a+1):
+    i=str(i)
+    j=len(i)
+    length+=j
+    if(length==a):
+        print(i)
+        print(i[j-1])
+        break
+    elif(length>a):
+        print(i)
+        x=length-a
+        i=i[::-1]
+        print(i[x])
+        break
+        
