@@ -1,0 +1,9 @@
+string=list(map(str,input().strip()))
+b=int(input())
+for i in range(b):
+    x,y=map(int,input().split())
+    string[x]=t
+    string[x]=string[y]
+    string[y]=t
+for i in string:
+    print(i,end="")
