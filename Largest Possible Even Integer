@@ -1,0 +1,12 @@
+l=list(map(int,input().strip()))
+x=[]
+for i in l:
+    if(i%2==0):
+        x.append(i)
+if(len(x)>0):
+    x=sorted(s)
+    x=x[::-1]
+    for i in x:
+        print(i,end="")
+else:
+    print(-1)
