@@ -1,0 +1,7 @@
+a=input()
+s="aeiouAEIOU"
+for i in a:
+    if((i in s) and (a.count(i)>=2)):
+        pass
+    else:
+        print(i,end="")
