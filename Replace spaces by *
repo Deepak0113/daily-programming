@@ -1,0 +1,5 @@
+a=list(map(str,input().split(" ")))
+x=len(a)
+for i in a:
+    print(i,end="")
+print("*"*(x-1))    
